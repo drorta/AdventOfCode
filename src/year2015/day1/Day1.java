@@ -1,12 +1,8 @@
-package day1;
+package year2015.day1;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 
 public class Day1 {
 
@@ -36,7 +32,7 @@ public class Day1 {
 
     public static void main(String[] args) {
         try {
-            String input = Files.readAllLines(Paths.get("src/day1.txt")).toString();
+            String input = Files.readAllLines(Paths.get("src/year2015/day1/day1.txt")).toString();
             System.out.println(solutionPart1(input));
         } catch (IOException e) {
             throw new RuntimeException(e);
