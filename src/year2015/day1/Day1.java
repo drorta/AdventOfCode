@@ -32,7 +32,7 @@ public class Day1 {
 
     public static void main(String[] args) {
         try {
-            String input = Files.readAllLines(Paths.get("src/year2015/day1/day1.txt")).toString();
+            String input = Files.readAllLines(Paths.get("src/year2015/year2024.day1/year2024.day1.txt")).toString();
             System.out.println(solutionPart1(input));
         } catch (IOException e) {
             throw new RuntimeException(e);

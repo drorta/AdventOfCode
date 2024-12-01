@@ -1,4 +1,4 @@
-package day1;
+package year2024.day1;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -51,7 +51,7 @@ public class Day1 {
 
     public static void main(String[] args) {
         try {
-            String[] input = Files.readAllLines(Paths.get("src/day1/day1.txt")).toArray(new String[0]);
+            String[] input = Files.readAllLines(Paths.get("src/year2024.day1/year2024.day1.txt")).toArray(new String[0]);
             System.out.println(solutionPart2(input));
         } catch (IOException e) {
             throw new RuntimeException(e);
