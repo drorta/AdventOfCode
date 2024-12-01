@@ -1,6 +1,7 @@
 package year2024.day1;
 import org.junit.jupiter.api.Test;
 
+import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -23,7 +24,8 @@ public class Day1Tests {
     @Test
     void part1Input() {
         try {
-            String[] input = Files.readAllLines(Paths.get(Day1.class.getResource("day.txt").toURI())).toArray(new String[0]);
+            URI fileName = (new Object(){}).getClass().getResource("day.txt").toURI();
+            String[] input = Files.readAllLines(Paths.get(fileName)).toArray(new String[0]);
             assertEquals(2192892, Day1.solutionPart1(input));
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -46,7 +48,8 @@ public class Day1Tests {
     @Test
     void part2Input() {
         try {
-            String[] input = Files.readAllLines(Paths.get(Day1.class.getResource("day.txt").toURI())).toArray(new String[0]);
+            URI fileName = (new Object(){}).getClass().getResource("day.txt").toURI();
+            String[] input = Files.readAllLines(Paths.get(fileName)).toArray(new String[0]);
             assertEquals(22962826, Day1.solutionPart2(input));
         } catch (Exception e) {
             throw new RuntimeException(e);

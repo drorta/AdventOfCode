@@ -1,5 +1,7 @@
 package year2024.day1;
 
+import java.net.URI;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -50,7 +52,8 @@ public class Day1 {
 
     public static void main(String[] args) {
         try {
-            String[] input = Files.readAllLines(Paths.get(Day1.class.getResource("day.txt").toURI())).toArray(new String[0]);
+            URI fileName = (new Object(){}).getClass().getResource("day.txt").toURI();
+            String[] input = Files.readAllLines(Paths.get(fileName)).toArray(new String[0]);
             System.out.println(solutionPart1(input));
             System.out.println(solutionPart2(input));
         } catch (Exception e) {
