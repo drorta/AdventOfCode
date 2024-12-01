@@ -1,6 +1,5 @@
 package year2015.day1;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -32,9 +31,10 @@ public class Day1 {
 
     public static void main(String[] args) {
         try {
-            String input = Files.readAllLines(Paths.get("src/year2015/year2024.day1/year2024.day1.txt")).toString();
+            String input = Files.readAllLines(Paths.get(Day1.class.getResource("day.txt").toURI())).toString();
             System.out.println(solutionPart1(input));
-        } catch (IOException e) {
+            System.out.println(solutionPart2(input));
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
