@@ -6,10 +6,6 @@ import java.nio.file.Paths;
 
 public class Day3 {
 
-    public static int solutionPart1(String input){
-        input.split("mul()")
-    }
-
     public static void main(String[] args) {
         try {
             URI fileName = (new Object(){}).getClass().getResource("day.txt").toURI();
